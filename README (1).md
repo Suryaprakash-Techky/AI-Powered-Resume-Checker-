@@ -1,11 +1,9 @@
 
-# 🤖 AI-Powered Resume Checker
+AI-Powered Resume Checker
 
 A cutting-edge Generative AI project that allows users to upload a **resume or job description** PDF and ask natural language questions about its content. It leverages **LangChain**, **FAISS**, and a **local LLM (Mistral via Ollama)** using the **RAG (Retrieval-Augmented Generation)** approach. The project includes a user-friendly **Streamlit** frontend for seamless interaction.
 
----
-
-## 📌 Table of Contents
+Table of Contents
 
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
@@ -18,10 +16,7 @@ A cutting-edge Generative AI project that allows users to upload a **resume or j
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
 
-
----
-
-## 🚀 Features
+Features
 
 - 📄 Upload resume or job description in PDF format
 - 🧠 Ask questions like “What skills does the candidate have?” or “Is this suitable for a data analyst role?”
@@ -32,9 +27,8 @@ A cutting-edge Generative AI project that allows users to upload a **resume or j
 - 🛡️ Fully local — **no OpenAI key required**
 - ⚙️ Modular code structure (chunking, embedding, querying, app)
 
----
 
-## 🧠 Tech Stack
+Tech Stack
 
 - **LangChain** – for chaining LLMs with retrievers
 - **LangChain Community Modules** – loaders like `PyPDFLoader`, Ollama, FAISS
@@ -44,11 +38,11 @@ A cutting-edge Generative AI project that allows users to upload a **resume or j
 - **Ollama** – to run Mistral LLM locally
 - **Python** – primary language
 
----
 
-## 🏗️ Architecture
+Architecture
 
-```text
+text
+
 PDF Upload
    │
    ▼
@@ -65,60 +59,47 @@ User Query ─► Retriever ─► Mistral (via Ollama)
                    │
                    ▼
               Final Answer
-```
 
----
 
-## ⚙️ Installation
+Installation
 
-### 1. Clone this repository
+1. Clone this repository
 ```bash
 git clone https://github.com/Suryaprakash-Techky/ai-powered-resume-checker.git
 cd ai-powered-resume-checker
-```
 
-### 2. Create and activate virtual environment
+2. Create and activate virtual environment
 ```bash
 python -m venv venv
 venv\Scripts\activate 
 
-```
-
-### 3. Install dependencies
+3. Install dependencies
 ```bash
 pip install -r requirements.txt
-```
 
-### 4. Install and run Ollama
+
+4. Install and run Ollama
 Download from: https://ollama.com  
 Then run:
 ollama run mistral
-```
 
----
-
-## ▶️ Usage
+Usage
 
 Run the app using:
 
 ```bash
 streamlit run app.py
-```
 
 Then upload your PDF, enter a question, and get instant answers!
 
----
-
-## ❓ Example Questions
+Example Questions
 
 - What skills are mentioned?
 - Is the candidate suitable for a data scientist role?
 - What experience does the person have?
 - Does the resume match a data analyst JD?
 
----
-
-## 📁 Folder Structure
+Folder Structure
 
 ```text
 ai-powered-resume-checker/
@@ -131,11 +112,9 @@ ai-powered-resume-checker/
 ├── README.md                # Project documentation
 ├── .gitignore
 └── faiss_store/             # Vector DB files (auto generated)
-```
 
----
 
-## 🌱 Future Improvements
+Future Improvements
 
 - Upload multiple PDFs at once
 - Add login + user history
@@ -143,14 +122,12 @@ ai-powered-resume-checker/
 - Add support for other LLMs (like LLaMA3, Phi-3)
 - Currenlty Building an app 
 
----
-
-## 👨‍💻 Author
+Author
 
 **Suryaprakash A**  
 📧 [suryaprakash_193@yahoo.com](mailto:suryaprakash_193@yahoo.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/suryaprakash-anandbabu-b9a0b1266/)
 
----
+
 
 
